@@ -7,7 +7,7 @@
  * (2) => The file given is not a file that can be opened or read.
  * (3) => The file provided includes an invalid instruction.
  * (4) => the case when the program is not able to malloc more memory.
- * (5) => the case when the parameter passed to the instruction "push" is not an int.
+ * (5) => the case when the parameter passed to the instruction "push" !int.
  * (6) => the case when the stack it empty for pint.
  * (7) => the case when the stack it empty for pop.
  * (8) => the case when stack is too short for operation.
@@ -89,7 +89,7 @@ void more_ero(int error_cd, ...)
 
 /**
  * string_ero - basically handles them errors.
- * @error_cd: The actual error codes 
+ * @error_cd: The actual error codes
  * (10) ~> The number inside a node is out of ASCII bounds.
  * (11) ~> empty stack.
  */

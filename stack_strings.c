@@ -3,18 +3,18 @@
 /**
  * prnt_char - Prints the Ascii value.
  * @stack: Pointer to a pointer pointing to top node of the stack.
- * @line_number: Interger representing the line number of of the opcode.
+ * @l_numb: Interger representing the line number of of the opcode.
  */
-void prnt_char(stack_t **stack, unsigned int line_number)
+void prnt_char(stack_t **stack, unsigned int l_numb)
 {
 	int ascii;
 
 	if (stack == NULL || *stack == NULL)
-		string_ero(11, line_number);
+		string_ero(11, l_numb);
 
 	ascii = (*stack)->n;
 	if (ascii < 0 || ascii > 127)
-		string_ero(10, line_number);
+		string_ero(10, l_numb);
 	printf("%c\n", ascii);
 }
 

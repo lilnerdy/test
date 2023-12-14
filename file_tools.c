@@ -72,10 +72,10 @@ int parse_l(char *buff, int l_numb, int formt)
 
 /**
  * find_fun - finds the appropriate function for the opcode
- * @opcode: opcode
- * @value: argument of opcode
- * @format:  storage format. If 0 Nodes will be entered as a stack.
- * @ln: line number
+ * @opcd: opcode
+ * @val: argument of opcode
+ * @formt:  storage format. If 0 Nodes will be entered as a stack.
+ * @ln_num: line number
  * if 1 nodes will be entered as a queue.
  * Return: void
  */
@@ -87,8 +87,8 @@ void find_fun(char *opcd, char *val, int ln_num, int formt)
 	instruction_t func_list[] = {
 		{"push", add_t_stack},
 		{"pall", prnt_stack},
-		{"pint", print_top},
-		{"pop", pop_top},
+		{"pint", print_topn},
+		{"pop", pop_topn},
 		{"Nop", Nop},
 		{"swap", Swap_nodes},
 		{"add", Add_nodes},

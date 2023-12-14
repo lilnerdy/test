@@ -20,9 +20,9 @@
  */
 typedef struct stack_s
 {
-        int n;
-        struct stack_s *prev;
-        struct stack_s *next;
+	int n;
+	struct stack_s *prev;
+	struct stack_s *next;
 } stack_t;
 
 /**
@@ -35,8 +35,8 @@ typedef struct stack_s
  */
 typedef struct instruction_s
 {
-        char *opcode;
-        void (*f)(stack_t **stack, unsigned int line_number);
+	char *opcode;
+	void (*f)(stack_t **stack, unsigned int l_numb);
 } instruction_t;
 
 extern stack_t *head;
@@ -58,8 +58,8 @@ void add_to_q(stack_t **, unsigned int);
 
 void call_func(op_func, char *, char *, int, int);
 
-void print_top(stack_t **, unsigned int);
-void pop_top(stack_t **, unsigned int);
+void print_topn(stack_t **, unsigned int);
+void pop_topn(stack_t **, unsigned int);
 void Nop(stack_t **, unsigned int);
 void Swap_nodes(stack_t **, unsigned int);
 
